@@ -1,5 +1,9 @@
-# speedometer
+# Speedometer
 Speedometer to measure your Internet bandwidth speed with pure python; no extra modules or binaries needed
+
+# Method used
+
+The program first does a small download (5MB). Based on that, it determines a bigger download, that will finish within 10 seconds.
 
 # Example usage:
 
