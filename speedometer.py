@@ -5,7 +5,7 @@ import time
 
 # Thinkbroad offers: 
 
-v = [
+SizeUrlList = [
 [ 5, 'http://download.thinkbroadband.com/5MB.zip' ],
 [ 10, 'http://download.thinkbroadband.com/10MB.zip' ],
 [ 20, 'http://download.thinkbroadband.com/20MB.zip' ],
@@ -60,7 +60,7 @@ def measurespeed(url):
 # Do basic test
 
 print("Basic measurement, with small download:")
-urlbasic = v[0][1]
+urlbasic = SizeUrlList[0][1]
 MBps, mbps = measurespeed(urlbasic)
 print("Speed in MB/s: %.2f" % MBps)
 print("Speed in Mbps: %.2f" % mbps)
@@ -77,7 +77,7 @@ print("\n\nMeasurement with bigger download, doable within 10 seconds")
 maxtime = 10 # seconds
 
 URLtoDO = None
-for size,sizeurl in v:
+for size,sizeurl in SizeUrlList:
 
 	expectedtime = size / MBps
 	#print(size,sizeurl, expectedtime)
