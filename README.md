@@ -40,3 +40,6 @@ Speed in MB/s: 29.27
 Speed in Mbps: 235.63
 ```
 
+# Bug
+
+On very low memory systems (256 MB RAM) with high speed connections, strange things can happen: too low speed reported (because of swapping?), of "Killed"
